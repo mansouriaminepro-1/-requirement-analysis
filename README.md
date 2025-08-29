@@ -86,7 +86,7 @@ Non-functional requirements describe **how** the system performs its functions, 
 
 # Acceptance Criteria
 
-## What Are Acceptance Criteria?
+### What Are Acceptance Criteria?
 
 Acceptance criteria are specific conditions that a feature must fulfill for stakeholders to consider it complete. They are crucial in Requirement Analysis because they:
 
@@ -95,7 +95,7 @@ Acceptance criteria are specific conditions that a feature must fulfill for stak
 - Include both functional and non-functional requirements.
 - Serve as a reference for quality assurance and validation.
 
-## Example: Checkout Feature in Booking Management System
+### Example: Checkout Feature in Booking Management System
 
 **Checkout Acceptance Criteria**
 
