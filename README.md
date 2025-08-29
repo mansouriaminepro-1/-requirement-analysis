@@ -28,6 +28,92 @@ Requirement Analysis plays a vital role in the Software Development Life Cycle (
 3. **Improved Quality and Risk Reduction**  
    Detailed and verified requirements provide a foundation for testing and quality assurance. They help identify potential conflicts, ambiguities, or feasibility issues early, reducing the risk of project delays or failure.
 
+## Key Activities in Requirement Analysis
 
+Requirement Analysis involves several essential activities to ensure that software requirements are accurate, complete, and actionable. The five key activities are:
 
+- **Requirement Gathering**  
+  Collect information about what the users, stakeholders, and business need from the system. This can involve interviews, surveys, questionnaires, and reviewing existing documentation.
+
+- **Requirement Elicitation**  
+  Engage with stakeholders to uncover their actual needs and expectations. Techniques include workshops, brainstorming sessions, observation, and prototyping to understand functional and non-functional requirements.
+
+- **Requirement Documentation**  
+  Clearly record all gathered and elicited requirements in a structured format. Common outputs include Software Requirements Specifications (SRS), user stories, and use case diagrams, making requirements understandable and traceable.
+
+- **Requirement Analysis and Modeling**  
+  Examine requirements for feasibility, consistency, and completeness. Use modeling techniques such as data flow diagrams, entity-relationship diagrams, and UML diagrams to visualize and organize requirements.
+
+- **Requirement Validation**  
+  Ensure that documented requirements accurately reflect stakeholder needs and business goals. This involves reviews, walkthroughs, inspections, and sign-offs to confirm correctness and readiness for the next SDLC phase.
+
+## Types of Requirements
+
+In the context of the hotel booking management system, requirements are categorized into two main types: **Functional Requirements** and **Non-Functional Requirements**. Each type ensures the system meets both user needs and quality standards.
+
+### Functional Requirements
+
+Functional requirements define the core features and actions the system must support. For the hotel booking management system, examples include:
+
+- **User Registration and Authentication:** Users can create accounts, log in securely, and manage their profiles.  
+- **Room Search and Filtering:** Users can search for hotels and rooms based on location, price, dates, ratings, and amenities.  
+- **Booking Management:** Users can make new bookings, modify existing reservations, and cancel bookings, with real-time updates to room availability.  
+- **Payment Processing:** The system supports multiple payment methods, including credit/debit cards, wallets, and online payment gateways.  
+- **Review and Rating System:** Users can submit reviews and ratings for hotels after their stay.  
+- **Admin Dashboard:** Administrators can manage hotels, rooms, bookings, payments, and generate operational reports.  
+
+### Non-Functional Requirements
+
+Non-functional requirements describe **how** the system performs its functions, focusing on quality, performance, and user experience. Examples specific to a hotel booking system include:
+
+- **Performance:** Search results and booking confirmations should be returned within 2 seconds, even under high user load.  
+- **Scalability:** The system must handle growth in users, hotels, and bookings, allowing easy horizontal scaling of servers.  
+- **Security:** All user data, including personal details and payment information, must be encrypted and secured against unauthorized access.  
+- **Reliability & Availability:** The system should be available 24/7 with minimal downtime, ensuring users can book or modify reservations at any time.  
+- **Usability:** The interface should be intuitive, responsive, and accessible across web and mobile devices for a smooth booking experience.  
+- **Maintainability:** The system should allow updates, bug fixes, and new features without disrupting ongoing bookings or data integrity.  
+- **Compliance:** The system must comply with data privacy regulations (e.g., GDPR) and payment industry standards (e.g., PCI-DSS).  
+
+## Use Case Diagrams
+
+**Use Case Diagrams** are visual representations of the interactions between users (actors) and a system. They illustrate the functionality the system provides and how different users engage with it. Use Case Diagrams are a key tool in Requirement Analysis as they provide clarity on system behavior, help identify all functional requirements, and improve communication between stakeholders and developers.
+
+### Benefits of Use Case Diagrams
+- **Visual clarity:** Shows system functionality and user interactions in a clear and easy-to-understand format.
+- **Requirement validation:** Helps ensure that all required system functionalities are captured.
+- **Communication:** Improves understanding between developers, stakeholders, and users.
+- **Project planning:** Assists in defining scope and prioritizing features.
+
+# Acceptance Criteria
+
+## What Are Acceptance Criteria?
+
+Acceptance criteria are specific conditions that a feature must fulfill for stakeholders to consider it complete. They are crucial in Requirement Analysis because they:
+
+- Provide a clear understanding of expected functionality.
+- Make features measurable and testable.
+- Include both functional and non-functional requirements.
+- Serve as a reference for quality assurance and validation.
+
+## Example: Checkout Feature in Booking Management System
+
+**Checkout Acceptance Criteria**
+
+1. **Successful Checkout**  
+   Guest provides valid information → Payment completed → Booking confirmed → Confirmation email delivered.
+
+2. **Invalid Payment Details**  
+   Expired or incorrect card → Display error message → Allow guest to retry payment.
+
+3. **Payment Declined**  
+   Card declined or insufficient funds → Notify guest → Provide retry option.
+
+4. **Property Unavailable**  
+   Selected property already booked → Prevent checkout → Show “Unavailable” message.
+
+5. **Payment Gateway Failure**  
+   Gateway timeout or error → Display appropriate message → Enable safe retry without duplicate charge.
+
+6. **Refund Handling**  
+   Booking canceled within the allowed refund period → Initiate refund → Notify guest of refund status.
 
